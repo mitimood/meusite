@@ -5,17 +5,15 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.containerLontra}>
+      <div>Bem vindo</div>
       <Image
       className={styles.lontra}
-
+      width={500}
+      height={500}
       src='/lontra_guitarra.jpg'
       objectPosition="center"
-      layout="fill"   
-      objectFit='contain'
       />
-      </div>
-
+      <div className={styles.teamo}>Te amo</div>
     </div>
 
   )
