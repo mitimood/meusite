@@ -10,18 +10,18 @@ import '../global.css';
 export const metadata: Metadata = {
   title: {
     default: "Bonafé.org",
-    template: "%s | bonafe.org",
+    template: "%s | mitimood.com",
   },
   description: "Software Engineer | Full Stack Developer | Pentester | Blockchain Analyst | DevOps | Cloud Architect",
   openGraph: {
-    title: "bonafe.org",
+    title: "mitimood.com",
     description:
       "Software Engineer | Full Stack Developer | Pentester | Blockchain Analyst | DevOps | Cloud Architect",
-    url: "https://bonafe.org",
-    siteName: "bonafe.org",
+    url: "https://mitimood.com",
+    siteName: "mitimood.com",
     images: [
       {
-        url: "https://bonafe.org/bonafe.png",
+        url: "https://mitimood.com/miti.png",
         width: 1920,
         height: 1080,
       },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "bonafe_org",
+    title: "mitimood_org",
     card: "summary_large_image",
   },
   icons: {

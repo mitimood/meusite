@@ -7,21 +7,21 @@ import {Card} from '../components/card';
 const socials = [
   {
     icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/lucas-bonafe/",
+    href: "https://www.linkedin.com/in/eliaskamel/",
     label: "LinkedIn",
-    handle: "in/lucas-bonafe",
+    handle: "in/eliaskamel",
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:lucas@bonafe.org",
+    href: "mailto:contato@mitimood.com",
     label: "E-mail",
-    handle: "lucas@bonafe.org",
+    handle: "contato@mitimood.com",
   },
   {
     icon: <Github size={20} />,
-    href: "https://github.com/LucasBonafe",
+    href: "https://github.com/mitimood",
     label: "GitHub",
-    handle: "LucasBonafe",
+    handle: "mitimood",
   },
 ];
 

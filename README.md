@@ -1,7 +1,7 @@
 <div align="center">
-    <a href="https://bonafe.org"><h1 align="center">bonafe.org</h1></a>
+    <a href="https://mitimood.com"><h1 align="center">mitimood.com</h1></a>
 
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=bonafe.org), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=mitimood.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
 
 </div>
 <br/>
@@ -11,11 +11,11 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 ## Running Locally
 
 ```sh-session
-git clone https://github.com/LucasBonafe/bonafe.org.git
-cd bonafe.org
+git clone https://github.com/mitimood/mySite.git
+cd mitimood.com
 ```
 
-Create a `.env` file similar to [`.env.example`](https://github.com/LucasBonafe/bonafe.org/blob/main/.env.example).
+Create a `.env` file similar to [`.env.example`](https://github.com/mitimood/mitimood.com/blob/main/.env.example).
 
 Then install dependencies and run the development server:
 
