@@ -9,14 +9,14 @@ import '../global.css';
 
 export const metadata: Metadata = {
   title: {
-    default: "Bonafé.org",
+    default: "Elias Kamel ",
     template: "%s | mitimood.com",
   },
-  description: "Software Engineer | Full Stack Developer | Pentester | Blockchain Analyst | DevOps | Cloud Architect",
+  description: "Data Engineer | Big Data | Hadoop | AWS | Cloud Computing",
   openGraph: {
     title: "mitimood.com",
     description:
-      "Software Engineer | Full Stack Developer | Pentester | Blockchain Analyst | DevOps | Cloud Architect",
+      "Data Engineer | Big Data | Hadoop | AWS | Cloud Computing",
     url: "https://mitimood.com",
     siteName: "mitimood.com",
     images: [
