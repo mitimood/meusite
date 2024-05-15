@@ -13,7 +13,7 @@ const Contador = () => {
     }
 
     // Iniciar o intervalo para incrementar o tempo
-    let interval: NodeJS.Timeout | null = null;
+    let interval: NodeJS.Timeout;
     if (isActive) {
       interval = setInterval(() => {
         setTime((prevTime) => {
@@ -22,11 +22,9 @@ const Contador = () => {
           return newTime;
         });
       }, 1000);
-    } else if (!isActive && time !== 0) {
-      clearInterval(interval as NodeJS.Timeout);
     }
-    return () => clearInterval(interval as NodeJS.Timeout);
-  }, [isActive, time]);
+    return () => clearInterval(interval); // Limpar o intervalo na desmontagem do componente
+  }, [isActive]);
 
   const formatTime = (time: number) => {
     const getSeconds = `0${time % 60}`.slice(-2);
