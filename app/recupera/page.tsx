@@ -13,33 +13,39 @@ const Contador = () => {
     }
 
     // Iniciar o intervalo para incrementar o tempo
-    let interval = null;
+    let interval: NodeJS.Timeout | null = null;
     if (isActive) {
       interval = setInterval(() => {
         setTime((prevTime) => {
           const newTime = prevTime + 1;
-          localStorage.setItem('contadorTime', newTime); // Salvar o tempo no localStorage
+          localStorage.setItem('contadorTime', newTime.toString()); // Salvar o tempo no localStorage
           return newTime;
         });
       }, 1000);
     } else if (!isActive && time !== 0) {
-      clearInterval(interval);
+      clearInterval(interval as NodeJS.Timeout);
     }
-    return () => clearInterval(interval);
+    return () => clearInterval(interval as NodeJS.Timeout);
   }, [isActive, time]);
 
-  const formatTime = (time) => {
+  const formatTime = (time: number) => {
     const getSeconds = `0${time % 60}`.slice(-2);
-    const minutes = `${Math.floor(time / 60)}`;
+    const minutes = Math.floor(time / 60);
     const getMinutes = `0${minutes % 60}`.slice(-2);
-    const getHours = `0${Math.floor(time / 3600)}`.slice(-2);
-    return `${getHours}:${getMinutes}:${getSeconds}`;
+    const hours = Math.floor(time / 3600);
+    const getHours = `0${hours % 24}`.slice(-2);
+    const days = Math.floor(time / (3600 * 24));
+    const getDays = `0${days % 30}`.slice(-2);
+    const months = Math.floor(time / (3600 * 24 * 30));
+    const getMonths = `0${months}`.slice(-2);
+
+    return `${getMonths} meses, ${getDays} dias, ${getHours}:${getMinutes}:${getSeconds}`;
   };
 
   const handleReset = () => {
     setIsActive(false);
     setTime(0);
-    localStorage.setItem('contadorTime', 0); // Resetar o tempo no localStorage
+    localStorage.setItem('contadorTime', '0'); // Resetar o tempo no localStorage
     setIsActive(true);
   };
 
